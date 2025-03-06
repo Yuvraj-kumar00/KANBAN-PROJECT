@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANBAN PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- BOARD CONTAINER -->
+    <div class="board-container" id="boardContainer"></div>
+    <button class="add-boards-button" id="addBoardsButton">+</button>
+
+     <!-- POPUP CARD -->
+     <div class="popup-card" id="popupCard">
+        <h2>Title</h2>
+
+        <div class="board-name-container">
+            <label for="name" class="board-name-label">Name</label>
+            <input type="text" id="name" class="board-name-input">
+        </div>
+
+        <div class="board-color-container">
+            <h3>Colors</h3>
+            <div class="board-color-boxes">
+                <div class="color-box" id="color-box-1"></div>
+                <div class="color-box" id="color-box-2"></div>
+                <div class="color-box" id="color-box-3"></div>
+                <div class="color-box" id="color-box-4"></div>
+                <div class="color-box" id="color-box-5"></div>
+            </div>
+        </div>
+
+        <div class="board-description-container">
+            <label for="description" class="board-description-label">Description</label>
+            <input type="text" id="description" class="board-description-input">
+        </div>
+
+        <div class="popup-button-container">
+            <button class="cancel-popup-card popup-button" id="cancelButton">Cancel</button>
+            <button class="submit-popup-card popup-button" id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
