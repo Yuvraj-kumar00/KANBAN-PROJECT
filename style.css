@@ -26,6 +26,10 @@ body {
     scrollbar-width: thin;
 }
 
+.blur {
+    filter: blur(5px);
+}
+
 .add-boards-button {
     color: #fff;
     font-size: 30px;
